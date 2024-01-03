@@ -1,0 +1,64 @@
+[{
+    "name":"iphone",
+    "price":154,
+    "feature":true,
+    "company":"Apple"
+},
+{
+    "name":"iphone 12",
+    "price":1504,
+    "company":"Apple"
+},
+{
+    "name":"watch",
+    "price":151,
+    "feature":true,
+    "company":"Apple"
+},
+{
+    "name":"Galaxy S23 FE",
+    "price":45000,
+    "feature":true,
+    "company":"Sumsung"
+},
+{
+    "name":"Galaxy S22 FE",
+    "price":42000,
+    "feature":true,
+    "company":"Sumsung"
+},
+{
+    "name":"Galaxy S21 FE",
+    "price":40000,
+    "feature":true,
+    "company":"Sumsung"
+},
+{
+    "name":"Galaxy S22 Ultra",
+    "price":120000,
+    "feature":true,
+    "company":"Sumsung"
+},
+{
+    "name":"Galaxy S21 Ultra",
+    "price":100000,
+    "company":"Sumsung"
+},
+{
+    "name":"Air buds",
+    "price":10000,
+    "feature":true,
+    "company":"Sumsung"
+},
+{
+    "name":"Galaxy Watch2 pro",
+    "price":12000,
+    "company":"Sumsung"
+},
+{
+    "name":"Galaxy Watch2 pro",
+    "price":12000,
+    "feature":true,
+    "company":"Sumsung"
+}
+]
