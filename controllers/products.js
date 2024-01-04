@@ -46,22 +46,15 @@ const getAllProductstesing = async (req, res) => {
   res.status(200).json({ myTesting });
 };
 
-// const insertProducts = async (req, res) => {
-//   // console.log(queryObect);
-//   const proData = new Product(req.body);
-//   // await proData.save();
-//   console.log(proData);
-//   proData.save((err, result) => {
-//     if (err) {
-//       console.error(err);
-//     } else {
-//       console.log("Data inserted successfully:", result);
-//     }
-//   });
-//   // res.send({
-//   //   success: true,
-//   //   message: "data added successfully ",
-//   //   data: proData,
-//   // });
-// };
-module.exports = { getAllProducts, getAllProductstesing };
+// Inserting data to the Database
+const insertProducts = async (req, res) => {
+  const proData = new Product(req.body);
+  await proData.save();
+
+  res.send({
+    success: true,
+    message: "data added successfully ",
+    data: proData,
+  });
+};
+module.exports = { getAllProducts, getAllProductstesing, insertProducts };
