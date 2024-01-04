@@ -1,4 +1,5 @@
 const Product = require("../models/product");
+
 const getAllProducts = async (req, res) => {
   const { company, name, feature, sort, select } = req.query; // searching functionality
   const queryObect = {};
@@ -15,7 +16,8 @@ const getAllProducts = async (req, res) => {
   let apiqueryRes = Product.find(queryObect);
 
   if (sort) {
-    let sortFix = sort.replace(",", " ");
+    // let sortFix = sort.replace(",", " ");
+    let sortFix = sort.split(",").join(" ");
     // queryObect.sort = sortFix;
     apiqueryRes = apiqueryRes.sort(sortFix);
   }
@@ -44,4 +46,22 @@ const getAllProductstesing = async (req, res) => {
   res.status(200).json({ myTesting });
 };
 
+// const insertProducts = async (req, res) => {
+//   // console.log(queryObect);
+//   const proData = new Product(req.body);
+//   // await proData.save();
+//   console.log(proData);
+//   proData.save((err, result) => {
+//     if (err) {
+//       console.error(err);
+//     } else {
+//       console.log("Data inserted successfully:", result);
+//     }
+//   });
+//   // res.send({
+//   //   success: true,
+//   //   message: "data added successfully ",
+//   //   data: proData,
+//   // });
+// };
 module.exports = { getAllProducts, getAllProductstesing };
